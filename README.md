@@ -19,3 +19,18 @@ wrk -t12 -c400 -d30s http://<url><:port>
 #-c number of requests
 #-d time (s means seconds)
 ```
+
+Benchmark
+Before Octane
+wrk -t12 -c500 -d5s http://localhost
+```
+Running 5s test @ http://localhost
+  12 threads and 500 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   997.76ms  559.06ms   1.95s    57.89%
+    Req/Sec    30.05     18.38    60.00     45.95%
+  243 requests in 5.06s, 4.35MB read
+  Socket errors: connect 0, read 243, write 0, timeout 148
+Requests/sec:     48.03
+Transfer/sec:      0.86MB
+```
