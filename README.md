@@ -47,3 +47,16 @@ Running 5s test @ http://localhost
 Requests/sec:    299.82
 Transfer/sec:      5.35MB
 ```
+
+Octane RoadRunner
+```
+Running 5s test @ http://localhost
+  12 threads and 500 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.57s   501.30ms   2.00s    85.29%
+    Req/Sec    27.28     24.38   180.00     84.10%
+  1111 requests in 5.10s, 19.84MB read
+  Socket errors: connect 0, read 0, write 0, timeout 275
+Requests/sec:    217.78
+Transfer/sec:      3.89MB
+```
