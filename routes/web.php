@@ -1,5 +1,6 @@
 <?php
 
+use App\Services\ExampleService;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::get('test', function(){
+    ExampleService::$values[] = rand(4,2);
+
+    dd(ExampleService::$values);
 });
