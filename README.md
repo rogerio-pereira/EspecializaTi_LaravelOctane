@@ -34,3 +34,16 @@ Running 5s test @ http://localhost
 Requests/sec:     48.03
 Transfer/sec:      0.86MB
 ```
+
+Octane Swoole
+```
+Running 5s test @ http://localhost
+  12 threads and 500 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.32s   435.70ms   1.97s    76.91%
+    Req/Sec    35.40     31.38   212.00     81.17%
+  1520 requests in 5.07s, 27.14MB read
+  Socket errors: connect 0, read 0, write 0, timeout 17
+Requests/sec:    299.82
+Transfer/sec:      5.35MB
+```
