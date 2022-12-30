@@ -1,6 +1,6 @@
 WRK installation (https://github.com/wg/wrk)
 ```
-sudo apt-get install build-essentials  libssl-dev git unzip -y
+sudo apt-get install build-essential libssl-dev git unzip -y
 git clone git@github.com:wg/wrk.git
 cd wrk
 sudo make
